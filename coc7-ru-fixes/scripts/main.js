@@ -68,8 +68,11 @@ Hooks.once('ready', async () => {
     return
   }
 
+  // Ключи в файле записаны плоско («CoC7.Foo.Bar»), поэтому раскрываем их в
+  // дерево до слияния — так результат не зависит от поведения mergeObject.
+  const expand = foundry?.utils?.expandObject ?? (value => value)
   const merge = foundry?.utils?.mergeObject ?? mergeObject
-  merge(game.i18n.translations, overrides, {
+  merge(game.i18n.translations, expand(overrides), {
     inplace: true,
     overwrite: true
   })

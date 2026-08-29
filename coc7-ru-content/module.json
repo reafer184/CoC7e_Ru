@@ -1,0 +1,154 @@
+{
+  "id": "coc7-ru-content",
+  "title": "Call of Cthulhu 7th Edition — русский контент (CoCID)",
+  "description": "Русскоязычные компендиумы CoCID для системы Call of Cthulhu 7th Edition: навыки, профессии, архетипы, наборы правил, оружие, фобии и мании, таблицы безумия и таблицы предыстории. Документы помечены lang: ru, поэтому система подставляет их вместо английских автоматически.",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "reafer184"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "CoC7",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.10.4"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "coc7-ru-fixes",
+        "type": "module",
+        "reason": "Русские строки интерфейса и имена навыков для резервных проверок системы."
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/cocid-overrides.js"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json",
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "ru-skills",
+      "label": "Навыки (рус.)",
+      "path": "packs/ru-skills",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-occupations",
+      "label": "Профессии (рус.)",
+      "path": "packs/ru-occupations",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-archetypes",
+      "label": "Архетипы (рус.)",
+      "path": "packs/ru-archetypes",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-setups",
+      "label": "Наборы правил (рус.)",
+      "path": "packs/ru-setups",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-weapons",
+      "label": "Оружие (рус.)",
+      "path": "packs/ru-weapons",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-statuses",
+      "label": "Фобии и мании (рус.)",
+      "path": "packs/ru-statuses",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-items",
+      "label": "Прочие предметы (рус.)",
+      "path": "packs/ru-items",
+      "type": "Item",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ru-tables",
+      "label": "Таблицы (рус.)",
+      "path": "packs/ru-tables",
+      "type": "RollTable",
+      "system": "CoC7",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Русский контент CoC7",
+      "sorting": "m",
+      "color": "#75844c",
+      "packs": [
+        "ru-skills",
+        "ru-occupations",
+        "ru-archetypes",
+        "ru-setups",
+        "ru-weapons",
+        "ru-statuses",
+        "ru-items",
+        "ru-tables"
+      ]
+    }
+  ],
+  "url": "https://github.com/reafer184/CoC7e_Ru",
+  "manifest": "https://raw.githubusercontent.com/reafer184/CoC7e_Ru/ai/ru-investigator-overhaul/coc7-ru-content/module.json",
+  "download": "https://github.com/reafer184/CoC7e_Ru/archive/refs/heads/ai/ru-investigator-overhaul.zip"
+}

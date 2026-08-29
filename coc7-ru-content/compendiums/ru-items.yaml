@@ -1,0 +1,83 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+name: Пример таланта
+type: talent
+img: icons/svg/item-bag.svg
+system:
+  source: ''
+  type:
+    physical: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.talent.example-talent
+      lang: ru
+      priority: 0
+---
+name: Тестовое заклинание
+type: spell
+img: systems/CoC7/assets/icons/pentagram-rose.svg
+system:
+  castingTime: 10–15 минут
+  costList:
+  - type: promptToggleButton
+    if: ''
+    config: '{"prompt": "Жертва не спит", "variable": "@awake"}'
+  - type: promptRequireNumber
+    if: ''
+    config: '{"prompt": "Сколько очков магии вы тратите", "variable": "@castermp"}'
+  - type: additionalCasterPromptAdd
+    if: ''
+    config: '{"prompt": "Другие, знающие заклинание", "variable": "@casters", "step": "1", "min": "0"}'
+  - type: additionalCasterPromptRequireNumber
+    if: ''
+    config: '{"prompt": "Очки магии", "variable": "@castermp"}'
+  - type: additionalCasterPromptAdd
+    if: ''
+    config: '{"prompt": "Прочие участники", "variable": "@others", "step": "1", "min": "0"}'
+  - type: additionalCasterCost
+    if: ''
+    config: '{"modify": "mp", "value": "1"}'
+  - type: triggerPrompt
+    if: ''
+  - type: casterCost
+    if: ''
+    config: '{"modify": "mp", "value": "@castermp"}'
+  - type: casterCost
+    if: ''
+    config: '{"modify": "san", "value": "1D3 - 1"}'
+  - type: casterCost
+    if: '@awake'
+    config: '{"modify": "pow", "value": "1"}'
+  - type: castingTime
+    if: '!@awake'
+    config: '{"value": "10 minutes"}'
+  - type: castingTime
+    if: '@awake'
+    config: '{"value": "15 minutes"}'
+  - type: setVariable
+    if: ''
+    config: '{"variable": "@totalMp", "value": "@others.length + @casters.castermp + @castermp"}'
+  - type: setVariable
+    if: ''
+    config: '{"variable": "@minutes", "value": "@totalMp / 6"}'
+  - type: additionalInformation
+    if: ''
+    config: '{"prompt": "Длительность кошмара: @minutes мин."}'
+  description:
+    value: <p>Заставляет другого человека увидеть кошмар.</p><p>Чародей тратит некоторое количество очков магии и теряет [[/r 1D3 - 1]] очков рассудка. Если тот, кому предназначен кошмар, в этот момент не спит, чародей должен потратить 1 ВЛИ, а произнесение заклинания занимает на пять минут больше.</p><p>Другие чародеи, знающие это заклинание, тоже могут добавить очки магии; любой присутствующий может добавить одно очко магии.</p><p>Кошмар начинается с того, что жертва сдаёт экзамен, к которому не готовилась, и продлевается на одну минуту за каждые шесть потраченных очков магии.</p><p></p>
+  source: FoundryVTT CoC7
+  type:
+    bind: false
+    call: false
+    combat: false
+    contact: true
+    dismiss: false
+    enchantment: false
+    gate: false
+    summon: false
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.spell.test-spell
+      lang: ru
+      priority: 0

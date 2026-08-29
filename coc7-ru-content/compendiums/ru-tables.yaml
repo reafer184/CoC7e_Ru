@@ -1,0 +1,518 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+name: 'Таблица IX: примеры фобий'
+img: icons/svg/d20-grey.svg
+description: Подробности см. в книге Хранителя, с. 160.
+results:
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.acrophobia
+  text: Акрофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.arachnophobia
+  text: Арахнофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.bibliophobia
+  text: Библиофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.eisoptrophobia
+  text: Эйсоптрофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.hemaphobia
+  text: Гемофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.necrophobia
+  text: Некрофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.odontophobia
+  text: Одонтофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.pyrophobia
+  text: Пирофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.telephonophobia
+  text: Телефонофобия
+- type: pack
+  img: icons/svg/aura.svg
+  documentCoCID: i.status.xenophobia
+  text: Ксенофобия
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..system-sample-phobias
+      lang: ru
+      priority: 0
+---
+name: 'Таблица VII: приступы безумия — в реальном времени'
+img: icons/svg/d20-grey.svg
+description: Подробности см. в книге Хранителя, 7-я редакция, с. 157.
+results:
+- type: pack
+  range:
+  - 1
+  - 10
+  img: icons/svg/d20-grey.svg
+  documentCoCID: rt..bouts-of-madness-table-realtime
+  text: Таблица приступов безумия (в реальном времени)
+- type: pack
+  range:
+  - 11
+  - 11
+  img: icons/svg/d20-grey.svg
+  documentCoCID: rt..system-sample-phobias
+  text: 'Таблица IX: примеры фобий'
+- type: pack
+  range:
+  - 12
+  - 12
+  img: icons/svg/d20-grey.svg
+  documentCoCID: rt..system-sample-manias
+  text: 'Таблица X: примеры маний'
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..system-bouts-of-madness-real-time
+      lang: ru
+      priority: 0
+---
+name: 'Таблица VIII: приступы безумия — итоговая'
+img: icons/svg/d20-grey.svg
+description: Подробности см. в книге Хранителя, 7-я редакция, с. 159.
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Приступ безумия
+  description: См. таблицу приступов безумия, с. 159. Длительность — [[/r 1D10]] часов.
+  range:
+  - 1
+  - 8
+- type: pack
+  range:
+  - 9
+  - 9
+  img: icons/svg/d20-grey.svg
+  documentCoCID: rt..system-sample-phobias
+  text: 'Таблица IX: примеры фобий'
+- type: pack
+  range:
+  - 10
+  - 10
+  img: icons/svg/d20-grey.svg
+  documentCoCID: rt..system-sample-manias
+  text: 'Таблица X: примеры маний'
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..system-bouts-of-madness-summary
+      lang: ru
+      priority: 0
+---
+name: 'Таблица X: примеры маний'
+img: icons/svg/d20-grey.svg
+description: Подробности см. в книге Хранителя, с. 161.
+results:
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.agathomania
+  text: Агатомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.algomania
+  text: Алгомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.amenomania
+  text: Аменомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.bibliokleptomania
+  text: Библиоклептомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.dikemania
+  text: Дикемания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.geliomania
+  text: Гелиомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.klazomania
+  text: Клазомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.kleptomania
+  text: Клептомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.nosomania
+  text: Нозомания
+- type: pack
+  img: icons/svg/ice-aura.svg
+  documentCoCID: i.status.pseudomania
+  text: Псевдомания
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..system-sample-manias
+      lang: ru
+      priority: 0
+---
+name: Таблица приступов безумия (в реальном времени)
+formula: 1d10
+results:
+- type: text
+  name: Амнезия
+  description: Сыщик не помнит ничего из того, что произошло с момента, когда он последний раз находился в безопасном месте. Ему кажется, что мгновение назад он завтракал, а теперь стоит лицом к лицу с чудовищем. Длится [[/r 1D10]] раундов.
+- type: text
+  name: Психосоматическое расстройство
+  description: Сыщик на [[/r 1D10]] раундов теряет зрение, слух или способность владеть одной из конечностей — без физической причины.
+- type: text
+  name: Вспышка ярости
+  description: Багровая пелена ярости застилает сыщику глаза, и он на [[/r 1D10]] раундов срывается в неуправляемое буйство, обрушивая его на всё вокруг — и на врагов, и на союзников.
+- type: text
+  name: Паранойя
+  description: На [[/r 1D10]] раундов сыщика охватывает тяжёлая паранойя. Все против него! Никому нельзя верить! За ним следят, его уже предали, а всё, что он видит, — обман.
+- type: text
+  name: Значимый человек
+  description: Обратитесь к разделу предыстории «Значимые люди». Сыщик принимает кого-то из присутствующих за своего значимого человека и действует, исходя из характера этих отношений. Длится [[/r 1D10]] раундов.
+- type: text
+  name: Обморок
+  description: Сыщик теряет сознание и приходит в себя через [[/r 1D10]] раундов.
+- type: text
+  name: Паническое бегство
+  description: Сыщик стремится оказаться как можно дальше отсюда любым доступным способом — даже если для этого придётся забрать единственную машину и бросить остальных. Бежит [[/r 1D10]] раундов.
+- type: text
+  name: Истерика или эмоциональный срыв
+  description: 'Сыщик не способен действовать: он хохочет, рыдает, кричит и так далее — [[/r 1D10]] раундов.'
+- type: text
+  name: Фобия
+  description: Сыщик приобретает новую фобию — например, клаустрофобию (боязнь замкнутых пространств), демонофобию (боязнь духов и демонов) или катсаридафобию (боязнь тараканов). Даже если источника страха рядом нет, следующие [[/r 1D10]] раундов сыщику кажется, что он здесь, и все его действия получают штрафную кость до конца приступа.
+- type: text
+  name: Мания
+  description: Сыщик приобретает новую манию — например, аблутоманию (тягу к постоянному мытью), псевдоманию (неудержимую тягу ко лжи) или гельминтоманию (болезненную любовь к червям). Следующие [[/r 1D10]] раундов сыщик стремится ей потворствовать, и все его действия получают штрафную кость до конца приступа.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..bouts-of-madness-table-realtime
+      lang: ru
+      priority: 0
+---
+name: Мировоззрение и убеждения
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Вера
+  description: Сыщик искренне верует и не пропускает ни одной службы; вера объясняет ему всё, что происходит в мире.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Наука
+  description: Только то, что можно измерить и проверить, достойно доверия. Суеверия — удел слабых умов.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Судьба
+  description: Всё предначертано заранее. Спорить с судьбой бессмысленно, остаётся лишь достойно сыграть свою роль.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Деньги
+  description: Деньги решают всё. Достаточно узнать цену человека — и станет ясно, чего он стоит.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Политика
+  description: Сыщик горячо привержен своим политическим взглядам и не молчит о них в обществе.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Человечность
+  description: Люди в глубине души добры; жестокость — следствие обстоятельств, а не природы.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Мизантропия
+  description: Люди — стая зверей в приличной одежде. Доверять можно единицам.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Тайное знание
+  description: Мир скрывает истину, и сыщик убеждён, что однажды доберётся до неё.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Долг
+  description: Слово дано — слово держат. Обязательства перед семьёй, страной или делом важнее личных желаний.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Суеверия
+  description: Разбитое зеркало, чёрная кошка, тринадцатый номер — сыщик соблюдает свои приметы неукоснительно.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-ideology-and-beliefs
+      lang: ru
+      priority: 0
+---
+name: Значимые люди
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Родитель
+  description: Отец или мать — тот, чьё одобрение сыщик до сих пор пытается заслужить.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Наставник
+  description: Учитель или старший коллега, открывший сыщику его настоящее призвание.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Возлюбленный
+  description: Тот, кого сыщик любит — взаимно или безответно.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Друг детства
+  description: Человек, знающий о сыщике всё, включая то, о чём он предпочёл бы забыть.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Брат или сестра
+  description: Родство, замешанное на соперничестве и привязанности одновременно.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Ребёнок
+  description: Сын, дочь, племянник или воспитанник, за которого сыщик в ответе.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Спасённый
+  description: Человек, которому сыщик однажды спас жизнь — и который об этом не забыл.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Кумир
+  description: Знаменитость или мастер своего дела, которому сыщик подражает, порой не будучи с ним знаком.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Соперник
+  description: Тот, чьи успехи сыщик мерит своими, а поражения переживает как победу.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Пропавший
+  description: Человек, исчезнувший без объяснений; сыщик всё ещё ищет ответ.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-significant-people
+      lang: ru
+      priority: 0
+---
+name: Важные места
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Родной дом
+  description: 'Дом, где сыщик вырос: скрип половиц узнаётся с первого шага.'
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Альма-матер
+  description: Университет или школа, где сыщик впервые понял, чего хочет от жизни.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Библиотека
+  description: Тихий читальный зал, где мысли наконец укладываются в порядок.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Церковь
+  description: Место, куда сыщик приходит за утешением или за прощением.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Кладбище
+  description: Здесь лежит тот, чью могилу сыщик навещает без свидетелей.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Бар
+  description: Знакомый кабак, где бармен наливает раньше, чем сыщик успевает попросить.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Берег
+  description: Пристань, пляж или берег реки, куда сыщик едет, чтобы подумать.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Место работы
+  description: Кабинет, цех или редакция, ставшие для сыщика вторым домом.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Клуб
+  description: Общество или клуб, членство в котором сыщик ценит выше жалованья.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Глухая окраина
+  description: Место, где с сыщиком случилось нечто, о чём он никому не рассказывает.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-meaningful-locations
+      lang: ru
+      priority: 0
+---
+name: Дорогие вещи
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Инструмент ремесла
+  description: Предмет, без которого сыщик не берётся за свою работу.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Оружие
+  description: Ствол или клинок, доставшийся от родителя или с войны.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Книга
+  description: Том, зачитанный до трещин в переплёте, с пометками на полях.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Фотография
+  description: Снимок человека или места, которых больше нет.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Украшение
+  description: Медальон, кольцо или часы, передающиеся в семье из рук в руки.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Дневник
+  description: Записи, которые сыщик ведёт ежедневно и не показывает никому.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Автомобиль
+  description: Машина, за которой сыщик ухаживает тщательнее, чем за собой.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Музыкальный инструмент
+  description: Скрипка, гитара или губная гармоника — спутник в дороге.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Сувенир
+  description: Безделушка, привезённая из далёкой поездки и напоминающая о ней.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Письмо
+  description: Письмо, которое сыщик перечитывает и до сих пор не отправил ответ.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-treasured-possessions
+      lang: ru
+      priority: 0
+---
+name: Черты характера
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Щедрость
+  description: Сыщик легко расстаётся с деньгами и временем ради других.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Упрямство
+  description: Отговорить сыщика от задуманного почти невозможно.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Обаяние
+  description: Люди тянутся к сыщику, сами не понимая почему.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Вспыльчивость
+  description: Терпение у сыщика короткое, а память на обиды долгая.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Любопытство
+  description: Закрытая дверь для сыщика — приглашение.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Осторожность
+  description: Сыщик проверяет выходы прежде, чем садится за стол.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Чувство юмора
+  description: Даже в дурной час у сыщика найдётся уместная шутка.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Скрытность
+  description: Сыщик говорит меньше, чем знает, и знает больше, чем кажется.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Верность
+  description: Своих сыщик не бросает, чего бы это ни стоило.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Пагубная привычка
+  description: Выпивка, карты, табак или что-то похуже — у сыщика есть слабость, и она берёт своё.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-traits
+      lang: ru
+      priority: 0
+---
+name: Травмы и шрамы
+img: icons/svg/d20-grey.svg
+description: Русскоязычная таблица модуля coc7-ru-content для шага «Предыстория» мастера создания сыщика.
+formula: 1d10
+results:
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Шрам на лице
+  description: Тонкая белая линия от брови до подбородка — след давней драки.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Сломанный нос
+  description: 'Нос, сросшийся криво: его так и не удосужились выправить.'
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Хромота
+  description: Старый перелом ноги, который ноет перед непогодой.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Ожог
+  description: Стянутая ожогом кожа на кисти или предплечье.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Отсутствующий палец
+  description: Палец, потерянный из-за станка, обморожения или ножа.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Глухота на одно ухо
+  description: 'Последствие взрыва или болезни: сыщик поворачивается здоровым ухом к говорящему.'
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Рубец от пули
+  description: Затянувшийся след огнестрельного ранения, который сыщик неохотно объясняет.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Больная спина
+  description: Травма, из-за которой долго стоять или носить тяжести мучительно.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Испорченное зрение
+  description: Без очков дальше вытянутой руки всё расплывается.
+- type: text
+  img: icons/svg/d20-black.svg
+  name: Хирургический шрам
+  description: Ровный след операции, спасшей сыщику жизнь.
+flags:
+  CoC7:
+    cocidFlag:
+      id: rt..backstory-injuries-and-scars
+      lang: ru
+      priority: 0

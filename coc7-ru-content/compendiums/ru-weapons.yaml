@@ -1,0 +1,1207 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+_id: RuWeapFolder0001
+name: Оружие ближнего боя
+type: folder
+color: '#75844c'
+---
+_id: RuWeapFolder0002
+name: Пистолеты и револьверы
+type: folder
+color: '#75844c'
+---
+_id: RuWeapFolder0003
+name: Винтовки
+type: folder
+color: '#75844c'
+---
+_id: RuWeapFolder0004
+name: Дробовики
+type: folder
+color: '#75844c'
+---
+_id: RuWeapFolder0005
+name: Пистолеты-пулемёты
+type: folder
+color: '#75844c'
+---
+_id: RuWeapFolder0006
+name: Пулемёты
+type: folder
+color: '#75844c'
+---
+name: Лук
+type: weapon
+img: icons/weapons/bows/shortbow-white.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.firearms-bow
+  range:
+    normal:
+      value: 30
+      damage: 1D6
+  bullets: 1
+  properties:
+    rngd: true
+    ahdb: true
+  malfunction: 97
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.bow
+      lang: ru
+      priority: 0
+---
+name: Кастет
+type: weapon
+img: icons/weapons/fist/fist-knuckles-spiked-stone.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D3+1
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.brass-knuckles
+      lang: ru
+      priority: 0
+---
+name: Кнут
+type: weapon
+img: icons/weapons/misc/whip-red-yellow.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-whip
+  range:
+    normal:
+      value: 3
+      damage: 1D3
+  properties:
+    rngd: true
+    ahdb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.bullwhip
+      lang: ru
+      priority: 0
+---
+name: Горящий факел
+type: weapon
+img: icons/sundries/lights/torch-brown-lit.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D6
+  properties:
+    rngd: false
+    burn: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.burning-torch
+      lang: ru
+      priority: 0
+---
+name: Кожаная дубинка
+type: weapon
+img: icons/weapons/clubs/club-baton-blue.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D8
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.blackjack
+      lang: ru
+      priority: 0
+---
+name: Дубина, большая
+type: weapon
+img: icons/weapons/clubs/club-baton-blue.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D8
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.club-large
+      lang: ru
+      priority: 0
+---
+name: Дубинка, малая
+type: weapon
+img: icons/weapons/clubs/club-baton-blue.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D6
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.club-small
+      lang: ru
+      priority: 0
+---
+name: Арбалет
+type: weapon
+img: icons/weapons/crossbows/crossbow-white.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.firearms-bow
+  range:
+    normal:
+      value: 50
+      damage: 1D8+2
+  usesPerRound:
+    normal: 0.5
+  bullets: 1
+  properties:
+    rngd: true
+    ahdb: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.crossbow
+      lang: ru
+      priority: 0
+---
+name: Гаррота
+type: weapon
+img: icons/equipment/neck/choker-chain-thin-gold.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-garrote
+  range:
+    normal:
+      damage: 1D6
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.garrote
+      lang: ru
+      priority: 0
+---
+name: Топорик/Серп
+type: weapon
+img: icons/tools/hand/hatchet-steel-grey.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-axe
+  range:
+    normal:
+      damage: 1D6+1
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.hatchet-sickle
+      lang: ru
+      priority: 0
+---
+name: Нож, большой
+type: weapon
+img: icons/weapons/swords/sword-machete-white.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D8
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.knife-large
+      lang: ru
+      priority: 0
+---
+name: Нож, средний
+type: weapon
+img: icons/tools/cooking/knife-chef-steel-brown.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D4+2
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.knife-medium
+      lang: ru
+      priority: 0
+---
+name: Нож, малый
+type: weapon
+img: icons/weapons/daggers/knife-green.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-brawl
+  range:
+    normal:
+      damage: 1D4
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.knife-small
+      lang: ru
+      priority: 0
+---
+name: Нунчаку
+type: weapon
+img: icons/weapons/staves/staff-mended.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-flail
+  range:
+    normal:
+      damage: 1D8
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.nunchaku
+      lang: ru
+      priority: 0
+---
+name: Камень (метательный)
+type: weapon
+img: icons/commodities/stone/boulder-grey.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.throw
+  range:
+    normal:
+      value: '@STR/5'
+      damage: 1D4
+  properties:
+    rngd: true
+    ahdb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.rock-thrown
+      lang: ru
+      priority: 0
+---
+name: Сюрикэн
+type: weapon
+img: icons/weapons/thrown/shuriken-double-red.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.throw
+  range:
+    normal:
+      value: '@STR/5'
+      damage: 1D3
+  properties:
+    rngd: true
+    ahdb: true
+  usesPerRound:
+    normal: 2
+  malfunction: 97
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.shuriken
+      lang: ru
+      priority: 0
+---
+name: Копьё
+type: weapon
+img: icons/weapons/polearms/spear-flared-blue.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.fighting-spear
+  range:
+    normal:
+      damage: 1D8+1
+  properties:
+    rngd: false
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.spear
+      lang: ru
+      priority: 0
+---
+name: Копьё (метательное)
+type: weapon
+img: icons/weapons/polearms/spear-flared-blue.webp
+folder: RuWeapFolder0001
+system:
+  skill:
+    main:
+      name: i.skill.throw
+  range:
+    normal:
+      value: '@STR/5'
+      damage: 1D8
+  properties:
+    rngd: true
+    ahdb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.spear-thrown
+      lang: ru
+      priority: 0
+---
+name: Самозарядный пистолет .22 Short
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 10
+      damage: 1D6
+  bullets: 6
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.22-short-automatic
+      lang: ru
+      priority: 0
+---
+name: Дерринджер .25 (1 ствол)
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 3
+      damage: 1D6
+  bullets: 1
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.25-derringer-1b
+      lang: ru
+      priority: 0
+---
+name: Револьвер .32 / 7,65 мм
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 15
+      damage: 1D8
+  bullets: 6
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.32-or-7-65mm-revolver
+      lang: ru
+      priority: 0
+---
+name: Самозарядный пистолет .32 / 7,65 мм
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 15
+      damage: 1D8
+  bullets: 8
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 99
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.32-or-7-65mm-automatic
+      lang: ru
+      priority: 0
+---
+name: Люгер P08
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 15
+      damage: 1D10
+  bullets: 8
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 99
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.model-p08-luger
+      lang: ru
+      priority: 0
+---
+name: Револьвер .45
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 15
+      damage: 1D10+2
+  bullets: 6
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.45-revolver
+      lang: ru
+      priority: 0
+---
+name: Самозарядный пистолет .45
+type: weapon
+img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
+folder: RuWeapFolder0002
+system:
+  skill:
+    main:
+      name: i.skill.firearms-handgun
+  range:
+    normal:
+      value: 15
+      damage: 1D10+2
+  bullets: 7
+  usesPerRound:
+    normal: 1
+    max: 3
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.45-automatic
+      lang: ru
+      priority: 0
+---
+name: Винтовка .22 со скользящим затвором
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 30
+      damage: 1D6+1
+  bullets: 6
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 99
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.22-bolt-action-rifle
+      lang: ru
+      priority: 0
+---
+name: Карабин .30 со скобой Генри
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 50
+      damage: 2D6
+  bullets: 6
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 98
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.30-lever-action-carbine
+      lang: ru
+      priority: 0
+---
+name: Винтовка Мартини-Генри .45
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 80
+      damage: 1D8+1D6+3
+  bullets: 1
+  usesPerRound:
+    normal: ⅓
+    max: ⅓
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.45-martini-henry-rifle
+      lang: ru
+      priority: 0
+---
+name: Духовое ружьё полковника Морана
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 20
+      damage: 2D6+1
+  bullets: 1
+  usesPerRound:
+    normal: ⅓
+    max: ⅓
+  properties:
+    rngd: true
+  malfunction: 88
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.col-moran-s-air-rifle
+      lang: ru
+      priority: 0
+---
+name: Ли-Энфилд .303
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 110
+      damage: 2D6+4
+  bullets: 10
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.303-lee-enfield
+      lang: ru
+      priority: 0
+---
+name: Винтовка .30-06 со скользящим затвором
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 110
+      damage: 2D6+4
+  bullets: 5
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.30-06-bolt-action-rifle
+      lang: ru
+      priority: 0
+---
+name: Слоновое ружьё (2 ствола)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0003
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 100
+      damage: 3D6+4
+  bullets: 2
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.elephant-gun-2b
+      lang: ru
+      priority: 0
+---
+name: Дробовик 20-го калибра (2 ствола)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0004
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 10
+      damage: 2D6
+    long:
+      value: 20
+      damage: 1D6
+    extreme:
+      value: 50
+      damage: 1D3
+  bullets: 2
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+    shotgun: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.20-gauge-shotgun-2b
+      lang: ru
+      priority: 0
+---
+name: Дробовик 16-го калибра (2 ствола)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0004
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 10
+      damage: 2D6+2
+    long:
+      value: 20
+      damage: 1D6+1
+    extreme:
+      value: 50
+      damage: 1D4
+  bullets: 2
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+    shotgun: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.16-gauge-shotgun-2b
+      lang: ru
+      priority: 0
+---
+name: Дробовик 12-го калибра (2 ствола)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0004
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 10
+      damage: 4D6
+    long:
+      value: 20
+      damage: 2D6
+    extreme:
+      value: 50
+      damage: 1D6
+  bullets: 2
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+    shotgun: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.12-gauge-shotgun-2b
+      lang: ru
+      priority: 0
+---
+name: Дробовик 12-го калибра (самозарядный)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0004
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 10
+      damage: 4D6
+    long:
+      value: 20
+      damage: 2D6
+    extreme:
+      value: 50
+      damage: 1D6
+  bullets: 5
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+    shotgun: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.12-gauge-shotgun-semi-auto
+      lang: ru
+      priority: 0
+---
+name: Дробовик 12-го калибра (обрез, 2 ствола)
+type: weapon
+img: icons/weapons/guns/gun-wood.webp
+folder: RuWeapFolder0004
+system:
+  skill:
+    main:
+      name: i.skill.firearms-rifle-shotgun
+  range:
+    normal:
+      value: 5
+      damage: 4D6
+    long:
+      value: 10
+      damage: 1D6
+  bullets: 2
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+    shotgun: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.12-gauge-shotgun-2b-sawed-off
+      lang: ru
+      priority: 0
+---
+name: Бергманн MP18I/MP28II
+type: weapon
+img: icons/weapons/guns/gun-red.webp
+folder: RuWeapFolder0005
+system:
+  skill:
+    main:
+      name: i.skill.firearms-submachine-gun
+  range:
+    normal:
+      value: 20
+      damage: 1D10
+  bullets: 20
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.bergmann-mp181-mp2811
+      lang: ru
+      priority: 0
+---
+name: Томпсон
+type: weapon
+img: icons/weapons/guns/gun-red.webp
+folder: RuWeapFolder0005
+system:
+  skill:
+    main:
+      name: i.skill.firearms-submachine-gun
+  range:
+    normal:
+      value: 20
+      damage: 1D10+2
+  bullets: 20
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.thompson
+      lang: ru
+      priority: 0
+---
+name: Автоматическая винтовка Браунинга M1918
+type: weapon
+img: icons/weapons/guns/gun-purple.webp
+folder: RuWeapFolder0006
+system:
+  skill:
+    main:
+      name: i.skill.firearms-machine-gun
+  range:
+    normal:
+      value: 90
+      damage: 2D6+4
+  bullets: 20
+  usesPerRound:
+    normal: 1
+    max: 2
+  properties:
+    rngd: true
+  malfunction: 100
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.browning-auto-rifle-m1918
+      lang: ru
+      priority: 0
+---
+name: Браунинг M1917A1 .30
+type: weapon
+img: icons/weapons/guns/gun-purple.webp
+folder: RuWeapFolder0006
+system:
+  skill:
+    main:
+      name: i.skill.firearms-machine-gun
+  range:
+    normal:
+      value: 150
+      damage: 2D6+4
+  bullets: 250
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.30-browning-m1917a1
+      lang: ru
+      priority: 0
+---
+name: Пулемёт «Брен»
+type: weapon
+img: icons/weapons/guns/gun-purple.webp
+folder: RuWeapFolder0006
+system:
+  skill:
+    main:
+      name: i.skill.firearms-machine-gun
+  range:
+    normal:
+      value: 110
+      damage: 2D6+4
+  bullets: 30
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.bren-gun
+      lang: ru
+      priority: 0
+---
+name: Пулемёт Льюиса Mark I
+type: weapon
+img: icons/weapons/guns/gun-purple.webp
+folder: RuWeapFolder0006
+system:
+  skill:
+    main:
+      name: i.skill.firearms-machine-gun
+  range:
+    normal:
+      value: 110
+      damage: 2D6+4
+  bullets: 47
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 96
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.mark-i-lewis-gun
+      lang: ru
+      priority: 0
+---
+name: Виккерс .303
+type: weapon
+img: icons/weapons/guns/gun-purple.webp
+folder: RuWeapFolder0006
+system:
+  skill:
+    main:
+      name: i.skill.firearms-machine-gun
+  range:
+    normal:
+      value: 110
+      damage: 2D6+4
+  bullets: 250
+  usesPerRound:
+    normal: 1
+    max: 1
+  properties:
+    rngd: true
+  malfunction: 99
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.vickers-303
+      lang: ru
+      priority: 0
+---
+name: Удар кулаком
+type: weapon
+img: systems/CoC7/assets/icons/skills/fighting_brawl.svg
+system:
+  skill:
+    main:
+      name: i.skill.brawl
+  range:
+    normal:
+      damage: 1D3
+  usesPerRound:
+    max: ''
+  bullets: ''
+  malfunction: ''
+  properties:
+    rngd: false
+    addb: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.brawl
+      lang: ru
+      priority: 0
+---
+name: Луч смерти (прототип)
+type: weapon
+img: icons/svg/sword.svg
+system:
+  range:
+    normal:
+      value: 17
+      damage: 5d6
+  usesPerRound:
+    max: ''
+    burst: ''
+  bullets: ''
+  malfunction: ''
+  properties:
+    rngd: true
+    slnt: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.example-death-ray-prototype
+      lang: ru
+      priority: 0
+---
+name: Экспериментальное оружие
+type: weapon
+img: icons/svg/sword.svg
+system:
+  description:
+    value: <p>Описание оружия.</p><p>Если включить свойство «Зона поражения», станут доступны три разных значения урона и дистанции.</p><p>Если включить «Автоматический огонь», для оружия можно будет выбрать два навыка.</p><p>Если включить «Особое», активируется поле особого описания.</p><p>На вкладке боя красный фон значка означает, что для этого оружия не выбран навык.</p><p>Откройте оружие и выберите нужный навык.</p>
+    special: '<p>Здесь можно добавить особое описание или броски:</p><p>Бросок 1: [[/r 2d17kh]]</p>'
+  skill:
+    main:
+      name: Выберите навык, когда оружие окажется у владельца
+  range:
+    normal:
+      value: 5
+      damage: 3d6
+  usesPerRound:
+    max: ''
+    burst: ''
+  bullets: ''
+  malfunction: 85
+  properties:
+    rngd: true
+    brst: true
+    spcl: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.weapon.example-experimental-weapon
+      lang: ru
+      priority: 0

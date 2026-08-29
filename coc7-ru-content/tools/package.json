@@ -1,0 +1,14 @@
+{
+  "name": "coc7-ru-content-tools",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Сборка бинарных компендиумов модуля coc7-ru-content из YAML",
+  "type": "module",
+  "scripts": {
+    "build": "cd .. && node tools/build-packs.mjs"
+  },
+  "dependencies": {
+    "classic-level": "^3.0.0",
+    "js-yaml": "^4.1.0"
+  }
+}

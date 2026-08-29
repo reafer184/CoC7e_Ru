@@ -1,0 +1,43 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+name: Уличный торговец
+type: occupation
+img: icons/svg/ice-aura.svg
+system:
+  source: FoundryVTT CoC7
+  description:
+    value: '<p>Уличные торговцы — их также называют разносчиками и лоточниками — кочуют с места на место, обычно с тележкой или лотком, и продают прохожим всякую мелочь: изделия ручной работы, еду и закуски или другие недорогие товары. Они славятся тем, что выкрикивают названия своих товаров, зазывая покупателей, а острым словом и болтовнёй умеют поднять цену и продать больше.</p><p>Целый день на улице означает, что торговец знает разные районы, привычки и перемещения местных жителей и служит магнитом для сплетен — а нередко и их источником.</p><p><strong>Возможные связи:</strong> другие торговцы, местные полицейские, поставщики товара, дворецкие и прочая домашняя прислуга.</p>'
+  type:
+    classic: true
+  occupationSkillPoints:
+    app:
+      multiplier: 4
+      selected: true
+  creditRating:
+    min: 10
+    max: 40
+  skills:
+  - i.skill.appraise
+  - i.skill.fighting-brawl
+  - i.skill.listen
+  - i.skill.navigate
+  - i.skill.psychology
+  groups:
+  - options: 1
+    skills:
+    - i.skill.accounting
+    - i.skill.art-craft-any
+  - options: 1
+    skills:
+    - i.skill.charm
+    - i.skill.fast-talk
+  - options: 1
+    skills:
+    - i.skill.language-any
+    - i.skill.sleight-of-hand
+  personal: 0
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.occupation.street-vendor
+      lang: ru
+      priority: 0

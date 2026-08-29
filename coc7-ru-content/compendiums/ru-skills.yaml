@@ -1,0 +1,2204 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+name: Бухгалтерия
+type: skill
+img: systems/CoC7/assets/icons/skills/accounting.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.accounting
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Обращение с животными
+type: skill
+img: systems/CoC7/assets/icons/skills/animal_handling.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+    rarity: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.animal-handling
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Антропология
+type: skill
+img: systems/CoC7/assets/icons/skills/anthropology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.anthropology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Оценка
+type: skill
+img: systems/CoC7/assets/icons/skills/appraise.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.appraise
+      lang: ru
+      priority: 0
+---
+name: Археология
+type: skill
+img: systems/CoC7/assets/icons/skills/archaeology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.archaeology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+      priority: 0
+---
+name: Искусство/Ремесло (Актёрское мастерство)
+type: skill
+img: systems/CoC7/assets/icons/skills/art_craft_acting.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.art-craft-acting
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+        regencyPulp: true
+        regency: true
+      priority: 0
+---
+name: Искусство/Ремесло (Любое)
+type: skill
+img: systems/CoC7/assets/icons/skills/art_craft_any.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    special: true
+    requiresname: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.art-craft-any
+      lang: ru
+      priority: 0
+---
+name: Искусство/Ремесло (Изобразительное искусство)
+type: skill
+img: systems/CoC7/assets/icons/skills/art_craft_fine_art.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.art-craft-fine-art
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Искусство/Ремесло (Подделка)
+type: skill
+img: systems/CoC7/assets/icons/skills/art_craft_forgery.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.art-craft-forgery
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Искусство/Ремесло (Фотография)
+type: skill
+img: systems/CoC7/assets/icons/skills/art_craft_photography.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.art-craft-photography
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+      priority: 0
+---
+name: Обаяние
+type: skill
+img: systems/CoC7/assets/icons/skills/charm.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.charm
+      lang: ru
+      priority: 0
+---
+name: Гражданское право
+type: skill
+img: systems/CoC7/assets/icons/skills/shaking-hands.svg
+system:
+  description:
+    value: <p>См. «Cthulhu Invictus».</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.civics
+      lang: ru
+      eras:
+        invictus: true
+      priority: 0
+---
+name: Лазание
+type: skill
+img: systems/CoC7/assets/icons/skills/climb.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.climb
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        darkAges: true
+        darkAgesPulp: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+        gasLight: true
+      priority: 0
+---
+name: Работа с компьютером
+type: skill
+img: systems/CoC7/assets/icons/skills/computer_use.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.computer-use
+      lang: ru
+      eras:
+        modern: true
+        modernPulp: true
+      priority: 0
+---
+name: Кредитоспособность
+type: skill
+img: systems/CoC7/assets/icons/skills/credit_rating.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 0
+  properties:
+    noxpgain: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.credit-rating
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Мифы Ктулху
+type: skill
+img: systems/CoC7/assets/icons/skills/cthulhu_mythos.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 0
+  properties:
+    noxpgain: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.cthulhu-mythos
+      lang: ru
+      priority: 0
+---
+name: Подрывное дело
+type: skill
+img: systems/CoC7/assets/icons/skills/demolitions.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    rarity: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.demolitions
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: Маскировка
+type: skill
+img: systems/CoC7/assets/icons/skills/disguise.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.disguise
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        darkAges: true
+        darkAgesPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Подводное плавание
+type: skill
+img: systems/CoC7/assets/icons/skills/diving_helmet.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+    rarity: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.diving
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: Уклонение
+type: skill
+img: systems/CoC7/assets/icons/skills/dodge.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1/2*@DEX
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.dodge
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        darkAges: true
+        darkAgesPulp: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+        gasLight: true
+      priority: 0
+---
+name: Вождение (Автомобиль)
+type: skill
+img: systems/CoC7/assets/icons/skills/drive_auto.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.drive-auto
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Вождение (Экипаж)
+type: skill
+img: systems/CoC7/assets/icons/skills/cartwheel.svg
+system:
+  description:
+    value: <p>См. «Cthulhu by Gaslight».</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.drive-carriage
+      lang: ru
+      eras:
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Вождение (Лошади и волы)
+type: skill
+img: systems/CoC7/assets/icons/skills/cartwheel.svg
+system:
+  description:
+    value: <p>См. «Cthulhu Invictus».</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.drive-horse-oxen
+      lang: ru
+      eras:
+        darkAges: true
+        darkAgesPulp: true
+        invictus: true
+      priority: 0
+---
+name: Вождение (Повозка и дилижанс)
+type: skill
+img: systems/CoC7/assets/icons/skills/cartwheel.svg
+system:
+  description:
+    value: <p>См. книгу правил «Down Darker Trails».</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.drive-wagon-coach
+      lang: ru
+      eras:
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: Ремонт электрики
+type: skill
+img: systems/CoC7/assets/icons/skills/electrical_repair.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.electrical-repair
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Электроника
+type: skill
+img: systems/CoC7/assets/icons/skills/electronics.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.electronics
+      lang: ru
+      eras:
+        modern: true
+        modernPulp: true
+      priority: 0
+---
+name: Империя
+type: skill
+img: systems/CoC7/assets/icons/skills/laurel_crown.svg
+system:
+  description:
+    value: <p>См. «Cthulhu Invictus».</p>
+  base: 25
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.empire
+      lang: ru
+      eras:
+        invictus: true
+      priority: 0
+---
+name: Заговаривание
+type: skill
+img: systems/CoC7/assets/icons/skills/fast_talk.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fast-talk
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Любой)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_brawl.svg
+system:
+  description:
+    value: <p>Используется в профессиях и архетипах, чтобы предложить выбрать один навык ближнего боя.</p>
+  base: 0
+  properties:
+    fighting: true
+    special: true
+    picknameonly: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-any
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Топор)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_axe.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-axe
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Драка)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_brawl.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 25
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-brawl
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Цепная пила)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_chainsaw.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-chainsaw
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Ближний бой (Цеп)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_flail.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-flail
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Ближний бой (Гаррота)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_garrote.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-garrote
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Копьё)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_spear.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-spear
+      lang: ru
+      priority: 0
+---
+name: Ближний бой (Меч)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_sword.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-sword
+      lang: ru
+      priority: 0
+---
+name: Метание
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_throw.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.throw
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Ближний бой (Кнут)
+type: skill
+img: systems/CoC7/assets/icons/skills/fighting_whip.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    fighting: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.fighting-whip
+      lang: ru
+      priority: 0
+---
+name: Стрельба (Любая)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_handgun.svg
+system:
+  description:
+    value: <p>Используется в профессиях и архетипах, чтобы предложить выбрать один навык стрельбы.</p>
+  base: 0
+  properties:
+    firearm: true
+    special: true
+    picknameonly: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-any
+      lang: ru
+      priority: 0
+---
+name: Стрельба (Артиллерия)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_artillery.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    firearm: true
+    special: true
+    rarity: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-artillery
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Стрельба (Лук)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_bow.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-bow
+      lang: ru
+      priority: 0
+---
+name: Стрельба (Огнемёт)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_flamethrower.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-flamethrower
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Стрельба (Пистолет)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_handgun.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-handgun
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+      priority: 0
+---
+name: Стрельба (Тяжёлое оружие)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_heavy_weapons.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-heavy-weapons
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Стрельба (Пулемёт)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_machine_gun.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-machine-gun
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Стрельба (Винтовка/Дробовик)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_rifle_shotgun.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 25
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-rifle-shotgun
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+      priority: 0
+---
+name: Стрельба (Пистолет-пулемёт)
+type: skill
+img: systems/CoC7/assets/icons/skills/firearms_submachine_gun.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    firearm: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.firearms-submachine-gun
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Первая помощь
+type: skill
+img: systems/CoC7/assets/icons/skills/first_aid.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 30
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.first-aid
+      lang: ru
+      priority: 0
+---
+name: Азартные игры
+type: skill
+img: systems/CoC7/assets/icons/skills/poker-hand.svg
+system:
+  description:
+    value: <p>См. книгу правил «Down Darker Trails».</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.gambling
+      lang: ru
+      eras:
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: История
+type: skill
+img: systems/CoC7/assets/icons/skills/history.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.history
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Гипноз
+type: skill
+img: systems/CoC7/assets/icons/skills/hypnosis.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    rarity: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.hypnosis
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: Запугивание
+type: skill
+img: systems/CoC7/assets/icons/skills/intimidate.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 15
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.intimidate
+      lang: ru
+      priority: 0
+---
+name: Прыжки
+type: skill
+img: systems/CoC7/assets/icons/skills/jump.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.jump
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Язык (Любой)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    requiresname: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-any
+      lang: ru
+      priority: 0
+---
+name: Язык (Родной)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: '@EDU'
+  properties:
+    push: true
+    special: true
+    requiresname: true
+    keepbasevalue: true
+    own: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-own
+      lang: ru
+      priority: 0
+---
+name: Язык (Чешский)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-czech
+      lang: ru
+      priority: 0
+---
+name: Язык (Нидерландский)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-dutch
+      lang: ru
+      priority: 0
+---
+name: Язык (Английский)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-english
+      lang: ru
+      priority: 0
+---
+name: Язык (Немецкий)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-german
+      lang: ru
+      priority: 0
+---
+name: Язык (Польский)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-polish
+      lang: ru
+      priority: 0
+---
+name: Язык (Русский)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-russian
+      lang: ru
+      priority: 0
+---
+name: Язык (Суахили)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-swahili
+      lang: ru
+      priority: 0
+---
+name: Язык (Йоруба)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-yoruba
+      lang: ru
+      priority: 0
+---
+name: Язык (Зулу)
+type: skill
+img: systems/CoC7/assets/icons/skills/language.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.language-zulu
+      lang: ru
+      priority: 0
+---
+name: Юриспруденция
+type: skill
+img: systems/CoC7/assets/icons/skills/law.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.law
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Работа с библиотекой
+type: skill
+img: systems/CoC7/assets/icons/skills/library_use.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.library-use
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Слух
+type: skill
+img: systems/CoC7/assets/icons/skills/listen.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.listen
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Взлом замков
+type: skill
+img: systems/CoC7/assets/icons/skills/locksmith.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.locksmith
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Знание (Любое)
+type: skill
+img: systems/CoC7/assets/icons/skills/classical_knowledge.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    requiresname: true
+    rarity: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.lore-any
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+      priority: 0
+---
+name: Ремонт механики
+type: skill
+img: systems/CoC7/assets/icons/skills/mechanical_repair.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.mechanical-repair
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Медицина
+type: skill
+img: systems/CoC7/assets/icons/skills/medicine.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.medicine
+      lang: ru
+      priority: 0
+---
+name: Природа
+type: skill
+img: systems/CoC7/assets/icons/skills/natural_world.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.natural-world
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Ориентирование
+type: skill
+img: systems/CoC7/assets/icons/skills/navigate.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.navigate
+      lang: ru
+      priority: 0
+---
+name: Оккультизм
+type: skill
+img: systems/CoC7/assets/icons/skills/occult.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.occult
+      lang: ru
+      priority: 0
+---
+name: Управление тяжёлой техникой
+type: skill
+img: systems/CoC7/assets/icons/skills/operate_heavy_machinery.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.operate-heavy-machinery
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+      priority: 0
+---
+name: Убеждение
+type: skill
+img: systems/CoC7/assets/icons/skills/persuade.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.persuade
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Пилотирование (Любое)
+type: skill
+img: systems/CoC7/assets/icons/skills/pilot_any.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    requiresname: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.pilot-any
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+      priority: 0
+---
+name: Психоанализ
+type: skill
+img: systems/CoC7/assets/icons/skills/psychoanalysis.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.psychoanalysis
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Психология
+type: skill
+img: systems/CoC7/assets/icons/skills/psychology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.psychology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Чтение по губам
+type: skill
+img: systems/CoC7/assets/icons/skills/read_lips.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    rarity: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.read-lips
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Верховая езда
+type: skill
+img: systems/CoC7/assets/icons/skills/ride.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.ride
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+      priority: 0
+---
+name: Работа с верёвкой
+type: skill
+img: systems/CoC7/assets/icons/skills/lasso.svg
+system:
+  description:
+    value: <p>См. книгу правил «Down Darker Trails».</p>
+  base: 5
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.rope-use
+      lang: ru
+      eras:
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0
+---
+name: Наука (Любая)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_any.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    requiresname: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-any
+      lang: ru
+      priority: 0
+---
+name: Наука (Астрономия)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_astronomy.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    push: true
+    special: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-astronomy
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Биология)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_biology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-biology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Ботаника)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_botany.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-botany
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Химия)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_chemistry.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-chemistry
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Криптография)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_cryptography.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-cryptography
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Инженерное дело)
+type: skill
+img: systems/CoC7/assets/icons/skills/spanner.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-engineering
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Криминалистика)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_forensics.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-forensics
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Геология)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_geology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-geology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Математика)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_mathematics.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-mathematics
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Метеорология)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_meteorology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-meteorology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Фармацевтика)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_pharmacy.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-pharmacy
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Физика)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_physics.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-physics
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Наука (Зоология)
+type: skill
+img: systems/CoC7/assets/icons/skills/science_zoology.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 1
+  properties:
+    special: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.science-zoology
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+      priority: 0
+---
+name: Ловкость рук
+type: skill
+img: systems/CoC7/assets/icons/skills/sleight_of_hand.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.sleight-of-hand
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Внимательность
+type: skill
+img: systems/CoC7/assets/icons/skills/spot_hidden.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 25
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.spot-hidden
+      lang: ru
+      priority: 0
+---
+name: Скрытность
+type: skill
+img: systems/CoC7/assets/icons/skills/stealth.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.stealth
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        darkAges: true
+        darkAgesPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Выживание (Любое)
+type: skill
+img: systems/CoC7/assets/icons/skills/survival_any.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    special: true
+    requiresname: true
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.survival-any
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Плавание
+type: skill
+img: systems/CoC7/assets/icons/skills/swim.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 20
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.swim
+      lang: ru
+      eras:
+        standard: true
+        modern: true
+        modernPulp: true
+        pulp: true
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+        gasLight: true
+        regency: true
+        regencyPulp: true
+        reignOfTerror: true
+      priority: 0
+---
+name: Выслеживание
+type: skill
+img: systems/CoC7/assets/icons/skills/track.svg
+system:
+  description:
+    value: <p>См. базовую книгу правил «Зов Ктулху», 7-я редакция.</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.track
+      lang: ru
+      priority: 0
+---
+name: Ловушки
+type: skill
+img: systems/CoC7/assets/icons/skills/wolf-trap.svg
+system:
+  description:
+    value: <p>См. книгу правил «Down Darker Trails».</p>
+  base: 10
+  properties:
+    push: true
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.skill.trap
+      lang: ru
+      eras:
+        downDarkerTrails: true
+        downDarkerTrailsPulp: true
+      priority: 0

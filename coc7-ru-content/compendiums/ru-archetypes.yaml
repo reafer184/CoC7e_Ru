@@ -1,0 +1,30 @@
+# Автогенерировано gen_ru_content.py, далее правится вручную.
+name: Миротворец
+type: archetype
+img: icons/svg/invisible.svg
+system:
+  source: FoundryVTT CoC7
+  description:
+    value: '<p>Человек, умеющий решать проблемы и от природы способный находить «око бури» — видеть вопрос со всех сторон сразу. Миротворцем движет стремление к согласию: он старается сохранить равновесие между людьми или группами людей и удержать положение вещей таким, как оно есть. Он ищет решения и легко приспосабливается — иногда себе во вред, потому что ставит чужие нужды выше собственных. Его нередко называют «покладистым» или «мягкотелым», но в час беды он бывает стойким, хладнокровным и смелым.</p>'
+  suggestedOccupations: <p>Спортсмен, бармен или официантка, патрульный полицейский, дворецкий, преступник, выборный чиновник, рабочий, миссионер, медсестра, священник, секретарь, йог.</p>
+  suggestedTraits: <p>хладнокровен в напряжённой обстановке, рассудителен, держится скромно, самоотвержен.</p>
+  coreCharacteristics:
+    app: true
+    int: true
+  skills:
+  - i.skill.charm
+  - i.skill.fast-talk
+  - i.skill.history
+  - i.skill.first-aid
+  - i.skill.intimidate
+  - i.skill.language-any
+  - i.skill.listen
+  - i.skill.persuade
+  - i.skill.psychology
+  - i.skill.spot-hidden
+flags:
+  CoC7:
+    cocidFlag:
+      id: i.archetype.peacemaker
+      lang: ru
+      priority: 0
