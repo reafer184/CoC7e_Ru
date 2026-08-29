@@ -299,3 +299,54 @@
 
 - Названия и описания навыков, профессий, архетипов, наборов правил, предысторий, оружия, книг, заклинаний и талантов. Мастер подтягивает CoCID-документы (`i.skill.*`, `i.occupation.*`, `i.archetype.*`, `i.setup.*`, `rt..backstory-*`) и выводит `item.name`, поэтому UI-словарь их не переименует. Нужен отдельный content-пак `coc7-ru-content`.
 - Буквальные английские строки в `.hbs`-шаблонах вида `title="Throw"`, которые не проходят через `game.i18n`. Их следует править upstream-PR или переопределением шаблона.
+
+## Второй заход (0.3.0): остальные 488 ключей
+До версии 0.3.0 модуль правил только лист сыщика и мастер создания. В 0.3.0
+переведены все оставшиеся ключи `static/lang/en.json`, которых не было в
+штатном русском словаре системы (или которые в нём совпадали с английским).
+Итог: 1649 ключей системы — 0 без русского перевода.
+
+### Проверки, которые прошёл этот заход
+- Набор ключей совпадает с исходным списком буква-в-букву (ни добавленных, ни потерянных).
+- Плейсхолдеры `{name}`, `{value}`, `{actorName}` и подобные совпадают с английским оригиналом в каждой строке.
+- Ни одна строка не осталась латиницей, кроме технических: `ID`, `Foundry ID`, `Foundry UUID`, названия клавиш `Ctrl`/`Shift`, имена собственные (Chaosium, Foundry VTT, Pulp Cthulhu, Down Darker Trails).
+- Пустые подсказки (`CoC7.Settings.PulpRules.*.Hint`, `ShowWorldEra.Hint`) оставлены пустыми, как в оригинале.
+
+### Названия специализаций — сверка с паками
+| Ключ | Английский | Штатный `ru.json` | Здесь | Почему |
+| --- | --- | --- | --- | --- |
+| `CoC7.FightingSpecializationName` | Fighting | Борьба | Ближний бой | сравнивается с `system.specialization` в `skill-system.js`, должно совпасть с паком |
+| `CoC7.FirearmSpecializationName` | Firearms | Огнестрельное оружие | Стрельба | то же |
+| `CoC7.RangedSpecializationName` | Ranged | — | Дальний бой | отдельное свойство `ranged`; нельзя дублировать «Стрельбу», иначе навык получит оба свойства |
+| `CoC7.LanguageSpecializationName` | Language | — | Язык | используется импортёром для разбора «Язык (Родной)» |
+| `CoC7.SkillNameHandgun` … `SkillNameMachineGun` | Handgun … | — | Пистолет, Винтовка, Дробовик, Винтовка/Дробовик, Пистолет-пулемёт, Пулемёт | импортёр ищет навык по собранному имени «Стрельба (Пистолет)» |
+
+### Примеры переведённых строк
+| Ключ | Английский | Русский |
+| --- | --- | --- |
+| `CoC7.ChaosiumCanvasInterface.Buttons.Right` | Right Mouse Button | Правая кнопка мыши |
+| `CoC7.Settings.CharacteristicsOrder.Name` | Characteristics Order | Порядок характеристик |
+| `CoC7.RollAsModifier.Title` | Set as roll damage or heal type | Назначить броску тип урона или лечения |
+| `CoC7.Errors.UnknownAttribute` | Unknown Attribute | Неизвестный атрибут |
+| `TYPES.Item.experiencePackage` | Experience Package | Пакет опыта |
+| `CoC7.IdeaCheck` | Idea Roll | Бросок Идеи |
+| `CoC7.SkillHintPush` | Skill can be pushed | Навык можно продавить |
+| `CoC7.MythosGain` | Mythos gain | Прирост Мифов |
+
+### Как воспроизвести список
+```bash
+# что осталось без русского перевода
+python3 - <<'PY'
+import json
+def flat(d,p=''):
+    for k,v in d.items():
+        n=p+k
+        if isinstance(v,dict): yield from flat(v,n+'.')
+        else: yield n,v
+en=dict(flat(json.load(open('static/lang/en.json'))))
+ru=dict(flat(json.load(open('static/lang/ru.json'))))
+fix=dict(flat(json.load(open('coc7-ru-fixes/lang/ru.json'))))
+cont=dict(flat(json.load(open('coc7-ru-content/lang/ru.json'))))
+print([k for k in en if (k not in ru and k not in fix and k not in cont) or (ru.get(k)==en[k] and k not in fix and k not in cont)])
+PY
+```
