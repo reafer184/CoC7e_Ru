@@ -1,5 +1,5 @@
 # Автогенерировано gen_ru_content.py, далее правится вручную.
-name: Бухгалтерия
+name: Бухгалтерское дело
 type: skill
 img: systems/CoC7/assets/icons/skills/accounting.svg
 system:
@@ -114,7 +114,7 @@ flags:
         gasLight: true
       priority: 0
 ---
-name: Искусство/Ремесло (Актёрское мастерство)
+name: Искусство/ремесло (актёрская игра)
 type: skill
 img: systems/CoC7/assets/icons/skills/art_craft_acting.svg
 system:
@@ -139,7 +139,7 @@ flags:
         regency: true
       priority: 0
 ---
-name: Искусство/Ремесло (Любое)
+name: Искусство/ремесло (любое)
 type: skill
 img: systems/CoC7/assets/icons/skills/art_craft_any.svg
 system:
@@ -157,7 +157,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Искусство/Ремесло (Изобразительное искусство)
+name: Искусство/ремесло (живопись)
 type: skill
 img: systems/CoC7/assets/icons/skills/art_craft_fine_art.svg
 system:
@@ -182,7 +182,7 @@ flags:
         regencyPulp: true
       priority: 0
 ---
-name: Искусство/Ремесло (Подделка)
+name: Искусство/ремесло (подделка)
 type: skill
 img: systems/CoC7/assets/icons/skills/art_craft_forgery.svg
 system:
@@ -207,7 +207,7 @@ flags:
         regencyPulp: true
       priority: 0
 ---
-name: Искусство/Ремесло (Фотография)
+name: Искусство/ремесло (фотография)
 type: skill
 img: systems/CoC7/assets/icons/skills/art_craft_photography.svg
 system:
@@ -312,7 +312,7 @@ flags:
         modernPulp: true
       priority: 0
 ---
-name: Кредитоспособность
+name: Средства
 type: skill
 img: systems/CoC7/assets/icons/skills/credit_rating.svg
 system:
@@ -354,7 +354,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Подрывное дело
+name: Взрывчатка
 type: skill
 img: systems/CoC7/assets/icons/skills/demolitions.svg
 system:
@@ -456,7 +456,7 @@ flags:
         gasLight: true
       priority: 0
 ---
-name: Вождение (Автомобиль)
+name: Вождение автомобиля
 type: skill
 img: systems/CoC7/assets/icons/skills/drive_auto.svg
 system:
@@ -477,7 +477,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Вождение (Экипаж)
+name: Вождение экипажа
 type: skill
 img: systems/CoC7/assets/icons/skills/cartwheel.svg
 system:
@@ -497,7 +497,7 @@ flags:
         regencyPulp: true
       priority: 0
 ---
-name: Вождение (Лошади и волы)
+name: Вождение конной упряжки
 type: skill
 img: systems/CoC7/assets/icons/skills/cartwheel.svg
 system:
@@ -517,7 +517,7 @@ flags:
         invictus: true
       priority: 0
 ---
-name: Вождение (Повозка и дилижанс)
+name: Вождение повозки или дилижанса
 type: skill
 img: systems/CoC7/assets/icons/skills/cartwheel.svg
 system:
@@ -536,7 +536,7 @@ flags:
         downDarkerTrailsPulp: true
       priority: 0
 ---
-name: Ремонт электрики
+name: Электрика
 type: skill
 img: systems/CoC7/assets/icons/skills/electrical_repair.svg
 system:
@@ -594,7 +594,7 @@ flags:
         invictus: true
       priority: 0
 ---
-name: Заговаривание
+name: Красноречие
 type: skill
 img: systems/CoC7/assets/icons/skills/fast_talk.svg
 system:
@@ -610,7 +610,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Любой)
+name: Ближний бой (любой)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_brawl.svg
 system:
@@ -628,7 +628,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Топор)
+name: Ближний бой (топор)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_axe.svg
 system:
@@ -645,7 +645,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Драка)
+name: Ближний бой (драка)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_brawl.svg
 system:
@@ -662,7 +662,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Цепная пила)
+name: Ближний бой (цепная пила)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_chainsaw.svg
 system:
@@ -684,7 +684,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Ближний бой (Цеп)
+name: Ближний бой (цеп)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_flail.svg
 system:
@@ -706,7 +706,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Ближний бой (Гаррота)
+name: Ближний бой (гаррота)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_garrote.svg
 system:
@@ -723,7 +723,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Копьё)
+name: Ближний бой (копьё)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_spear.svg
 system:
@@ -740,7 +740,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Ближний бой (Меч)
+name: Ближний бой (меч)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_sword.svg
 system:
@@ -784,7 +784,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Ближний бой (Кнут)
+name: Ближний бой (кнут)
 type: skill
 img: systems/CoC7/assets/icons/skills/fighting_whip.svg
 system:
@@ -801,7 +801,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Стрельба (Любая)
+name: Стрельба (любая)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_handgun.svg
 system:
@@ -819,7 +819,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Стрельба (Артиллерия)
+name: Стрельба (артиллерия)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_artillery.svg
 system:
@@ -843,7 +843,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Стрельба (Лук)
+name: Стрельба (лук)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_bow.svg
 system:
@@ -860,7 +860,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Стрельба (Огнемёт)
+name: Стрельба (огнемёт)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_flamethrower.svg
 system:
@@ -882,7 +882,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Стрельба (Пистолет)
+name: Стрельба (пистолет)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_handgun.svg
 system:
@@ -907,7 +907,7 @@ flags:
         gasLight: true
       priority: 0
 ---
-name: Стрельба (Тяжёлое оружие)
+name: Стрельба (тяжёлое оружие)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_heavy_weapons.svg
 system:
@@ -929,7 +929,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Стрельба (Пулемёт)
+name: Стрельба (пулемёт)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_machine_gun.svg
 system:
@@ -951,7 +951,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Стрельба (Винтовка/Дробовик)
+name: Стрельба (винтовка/дробовик)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_rifle_shotgun.svg
 system:
@@ -976,7 +976,7 @@ flags:
         gasLight: true
       priority: 0
 ---
-name: Стрельба (Пистолет-пулемёт)
+name: Стрельба (пистолет-пулемёт)
 type: skill
 img: systems/CoC7/assets/icons/skills/firearms_submachine_gun.svg
 system:
@@ -1127,7 +1127,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Язык (Любой)
+name: Язык (иностранный)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1145,7 +1145,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Родной)
+name: Язык (родной)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1165,7 +1165,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Чешский)
+name: Язык (чешский)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1182,7 +1182,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Нидерландский)
+name: Язык (голландский)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1199,7 +1199,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Английский)
+name: Язык (английский)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1216,7 +1216,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Немецкий)
+name: Язык (немецкий)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1233,7 +1233,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Польский)
+name: Язык (польский)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1250,7 +1250,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Русский)
+name: Язык (русский)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1267,7 +1267,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Суахили)
+name: Язык (суахили)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1284,7 +1284,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Йоруба)
+name: Язык (йоруба)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1301,7 +1301,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Язык (Зулу)
+name: Язык (зулу)
 type: skill
 img: systems/CoC7/assets/icons/skills/language.svg
 system:
@@ -1345,7 +1345,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Работа с библиотекой
+name: Работа в библиотеке
 type: skill
 img: systems/CoC7/assets/icons/skills/library_use.svg
 system:
@@ -1399,7 +1399,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Взлом замков
+name: Взлом
 type: skill
 img: systems/CoC7/assets/icons/skills/locksmith.svg
 system:
@@ -1426,7 +1426,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Знание (Любое)
+name: Знание (любое)
 type: skill
 img: systems/CoC7/assets/icons/skills/classical_knowledge.svg
 system:
@@ -1448,7 +1448,7 @@ flags:
         modern: true
       priority: 0
 ---
-name: Ремонт механики
+name: Механика
 type: skill
 img: systems/CoC7/assets/icons/skills/mechanical_repair.svg
 system:
@@ -1490,7 +1490,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Природа
+name: Естествознание
 type: skill
 img: systems/CoC7/assets/icons/skills/natural_world.svg
 system:
@@ -1546,7 +1546,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Управление тяжёлой техникой
+name: Управление тяжёлыми машинами
 type: skill
 img: systems/CoC7/assets/icons/skills/operate_heavy_machinery.svg
 system:
@@ -1597,7 +1597,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Пилотирование (Любое)
+name: Пилотирование (любое)
 type: skill
 img: systems/CoC7/assets/icons/skills/pilot_any.svg
 system:
@@ -1736,7 +1736,7 @@ flags:
         downDarkerTrailsPulp: true
       priority: 0
 ---
-name: Наука (Любая)
+name: Наука (любая)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_any.svg
 system:
@@ -1754,7 +1754,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Наука (Астрономия)
+name: Наука (астрономия)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_astronomy.svg
 system:
@@ -1776,7 +1776,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Биология)
+name: Наука (биология)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_biology.svg
 system:
@@ -1798,7 +1798,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Ботаника)
+name: Наука (ботаника)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_botany.svg
 system:
@@ -1820,7 +1820,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Химия)
+name: Наука (химия)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_chemistry.svg
 system:
@@ -1842,7 +1842,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Криптография)
+name: Наука (криптография)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_cryptography.svg
 system:
@@ -1864,7 +1864,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Инженерное дело)
+name: Наука (инженерия)
 type: skill
 img: systems/CoC7/assets/icons/skills/spanner.svg
 system:
@@ -1886,7 +1886,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Криминалистика)
+name: Наука (криминалистика)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_forensics.svg
 system:
@@ -1908,7 +1908,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Геология)
+name: Наука (геология)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_geology.svg
 system:
@@ -1930,7 +1930,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Математика)
+name: Наука (математика)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_mathematics.svg
 system:
@@ -1952,7 +1952,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Метеорология)
+name: Наука (метеорология)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_meteorology.svg
 system:
@@ -1974,7 +1974,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Фармацевтика)
+name: Наука (фармакология)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_pharmacy.svg
 system:
@@ -1996,7 +1996,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Физика)
+name: Наука (физика)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_physics.svg
 system:
@@ -2018,7 +2018,7 @@ flags:
         pulp: true
       priority: 0
 ---
-name: Наука (Зоология)
+name: Наука (зоология)
 type: skill
 img: systems/CoC7/assets/icons/skills/science_zoology.svg
 system:
@@ -2067,7 +2067,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Внимательность
+name: Внимание
 type: skill
 img: systems/CoC7/assets/icons/skills/spot_hidden.svg
 system:
@@ -2112,7 +2112,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Выживание (Любое)
+name: Выживание (любое)
 type: skill
 img: systems/CoC7/assets/icons/skills/survival_any.svg
 system:
@@ -2168,7 +2168,7 @@ flags:
         reignOfTerror: true
       priority: 0
 ---
-name: Выслеживание
+name: Чтение следов
 type: skill
 img: systems/CoC7/assets/icons/skills/track.svg
 system:

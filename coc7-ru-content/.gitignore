@@ -3,3 +3,4 @@ tools/package-lock.json
 packs/*/LOCK
 packs/*/LOG
 packs/*/LOG.old
+tools/compendiums.json

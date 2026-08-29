@@ -23,137 +23,151 @@
 | Keeper | Хранитель |
 | Setup | Набор правил |
 | Archetype | Архетип |
-| Occupation | Профессия |
-| Credit Rating | Кредитоспособность |
+| Occupation | Род занятий (в мастере — «Профессия») |
+| Credit Rating | Средства |
 | Cthulhu Mythos | Мифы Ктулху |
 | Sanity | Рассудок |
-| Bout of Madness | Приступ безумия |
+| Bout of Madness | приступ безумия |
 | Phobia / Mania | Фобия / Мания |
 | Status | Состояние |
 | Backstory | Предыстория |
 | Trait | Черта характера |
 | Significant People | Значимые люди |
-| Treasured Possessions | Дорогие вещи |
+| Treasured Possessions | Ценное имущество |
 | penalty die | штрафная кость |
-| POW | ВЛИ |
-| Magic Points | Очки магии (ОМ) |
+| POW | МОЩ |
+| Magic Points | Пункты магии (ПМ) |
 
 ## Правило записи имён навыков
 
 Сборщик системы разбирает имя навыка регулярным выражением `^(.+)\s*\((.+)\)$`:
-часть до скобок становится `system.specialization`, часть в скобках —
-`system.skillName`. Поэтому все специализации записаны в форме
-«Специализация (Уточнение)» с заглавной буквы внутри скобок:
-«Стрельба (Пистолет)» → специализация «Стрельба», навык «Пистолет».
-Так лист персонажа корректно группирует навыки, а поиск «любого» навыка
-(`Стрельба (Любая)`) продолжает работать.
+часть до скобок становится `system.specialization`, часть в скобках — `system.skillName`.
+Уточнение в скобках пишется **со строчной буквы, как в печатном издании**:
+«Стрельба (пистолет)» → специализация «Стрельба», навык «пистолет».
+
+Вынужденные отклонения от печатной формы:
+
+- на листе печатается «Язык, иностр.» и «Язык, родной», но запятая не распознаётся движком,
+  поэтому в паке — «Язык (иностранный)» и «Язык (родной)»;
+- у «любых» навыков лист не указывает специализацию, в паке сохранено «(любое/любая/любой)»,
+  иначе документы `*-any` неотличимы от базовых;
+- навыки вождения в системе идут без скобок (`Drive Auto`, `Drive Carriage`), поэтому у них
+  нет специализации: «Вождение автомобиля» (издание), «Вождение экипажа», «Вождение конной упряжки»,
+  «Вождение повозки или дилижанса» (авторские, издания их не содержат).
+
+Значения ключей `CoC7.SkillName*`, `CoC7.SkillOwn` и `CoC7.*SpecializationName` в модуле
+`coc7-ru-fixes` совпадают с этими частями имён — иначе мастер создания сыщика создаст дубль навыка.
 
 ## Навыки (103)
 
+Названия взяты из **официального русского издания «Зов Ктулху», 7-я редакция (Мир Хобби)**;
+там, где издание не содержит навыка (эпохи Gaslight/Invictus/Down Darker Trails, редкие специализации),
+имя составлено по книжному образцу и помечено в README как авторское.
+
 | CoCID | Английский | Русский |
 | --- | --- | --- |
-| `i.skill.accounting` | Accounting | Бухгалтерия |
+| `i.skill.accounting` | Accounting | Бухгалтерское дело |
 | `i.skill.animal-handling` | Animal Handling | Обращение с животными |
 | `i.skill.anthropology` | Anthropology | Антропология |
 | `i.skill.appraise` | Appraise | Оценка |
 | `i.skill.archaeology` | Archaeology | Археология |
-| `i.skill.art-craft-acting` | Art/Craft (Acting) | Искусство/Ремесло (Актёрское мастерство) |
-| `i.skill.art-craft-any` | Art/Craft (Any) | Искусство/Ремесло (Любое) |
-| `i.skill.art-craft-fine-art` | Art/Craft (Fine Art) | Искусство/Ремесло (Изобразительное искусство) |
-| `i.skill.art-craft-forgery` | Art/Craft (Forgery) | Искусство/Ремесло (Подделка) |
-| `i.skill.art-craft-photography` | Art/Craft (Photography) | Искусство/Ремесло (Фотография) |
+| `i.skill.art-craft-acting` | Art/Craft (Acting) | Искусство/ремесло (актёрская игра) |
+| `i.skill.art-craft-any` | Art/Craft (Any) | Искусство/ремесло (любое) |
+| `i.skill.art-craft-fine-art` | Art/Craft (Fine Art) | Искусство/ремесло (живопись) |
+| `i.skill.art-craft-forgery` | Art/Craft (Forgery) | Искусство/ремесло (подделка) |
+| `i.skill.art-craft-photography` | Art/Craft (Photography) | Искусство/ремесло (фотография) |
 | `i.skill.charm` | Charm | Обаяние |
 | `i.skill.civics` | Civics | Гражданское право |
 | `i.skill.climb` | Climb | Лазание |
 | `i.skill.computer-use` | Computer Use | Работа с компьютером |
-| `i.skill.credit-rating` | Credit Rating | Кредитоспособность |
+| `i.skill.credit-rating` | Credit Rating | Средства |
 | `i.skill.cthulhu-mythos` | Cthulhu Mythos | Мифы Ктулху |
-| `i.skill.demolitions` | Demolitions | Подрывное дело |
+| `i.skill.demolitions` | Demolitions | Взрывчатка |
 | `i.skill.disguise` | Disguise | Маскировка |
 | `i.skill.diving` | Diving | Подводное плавание |
 | `i.skill.dodge` | Dodge | Уклонение |
-| `i.skill.drive-auto` | Drive Auto | Вождение (Автомобиль) |
-| `i.skill.drive-carriage` | Drive Carriage | Вождение (Экипаж) |
-| `i.skill.drive-horse-oxen` | Drive Horse / Oxen | Вождение (Лошади и волы) |
-| `i.skill.drive-wagon-coach` | Drive Wagon / Coach | Вождение (Повозка и дилижанс) |
-| `i.skill.electrical-repair` | Electrical Repair | Ремонт электрики |
+| `i.skill.drive-auto` | Drive Auto | Вождение автомобиля |
+| `i.skill.drive-carriage` | Drive Carriage | Вождение экипажа |
+| `i.skill.drive-horse-oxen` | Drive Horse / Oxen | Вождение конной упряжки |
+| `i.skill.drive-wagon-coach` | Drive Wagon / Coach | Вождение повозки или дилижанса |
+| `i.skill.electrical-repair` | Electrical Repair | Электрика |
 | `i.skill.electronics` | Electronics | Электроника |
 | `i.skill.empire` | Empire | Империя |
-| `i.skill.fast-talk` | Fast Talk | Заговаривание |
-| `i.skill.fighting-any` | Fighting (Any) | Ближний бой (Любой) |
-| `i.skill.fighting-axe` | Fighting (Axe) | Ближний бой (Топор) |
-| `i.skill.fighting-brawl` | Fighting (Brawl) | Ближний бой (Драка) |
-| `i.skill.fighting-chainsaw` | Fighting (Chainsaw) | Ближний бой (Цепная пила) |
-| `i.skill.fighting-flail` | Fighting (Flail) | Ближний бой (Цеп) |
-| `i.skill.fighting-garrote` | Fighting (Garrote) | Ближний бой (Гаррота) |
-| `i.skill.fighting-spear` | Fighting (Spear) | Ближний бой (Копьё) |
-| `i.skill.fighting-sword` | Fighting (Sword) | Ближний бой (Меч) |
-| `i.skill.throw` | Throw | Метание |
-| `i.skill.fighting-whip` | Fighting (Whip) | Ближний бой (Кнут) |
-| `i.skill.firearms-any` | Firearms (Any) | Стрельба (Любая) |
-| `i.skill.firearms-artillery` | Firearms (Artillery) | Стрельба (Артиллерия) |
-| `i.skill.firearms-bow` | Firearms (Bow) | Стрельба (Лук) |
-| `i.skill.firearms-flamethrower` | Firearms (Flamethrower) | Стрельба (Огнемёт) |
-| `i.skill.firearms-handgun` | Firearms (Handgun) | Стрельба (Пистолет) |
-| `i.skill.firearms-heavy-weapons` | Firearms (Heavy Weapons) | Стрельба (Тяжёлое оружие) |
-| `i.skill.firearms-machine-gun` | Firearms (Machine Gun) | Стрельба (Пулемёт) |
-| `i.skill.firearms-rifle-shotgun` | Firearms (Rifle/Shotgun) | Стрельба (Винтовка/Дробовик) |
-| `i.skill.firearms-submachine-gun` | Firearms (Submachine Gun) | Стрельба (Пистолет-пулемёт) |
+| `i.skill.fast-talk` | Fast Talk | Красноречие |
+| `i.skill.fighting-any` | Fighting (Any) | Ближний бой (любой) |
+| `i.skill.fighting-axe` | Fighting (Axe) | Ближний бой (топор) |
+| `i.skill.fighting-brawl` | Fighting (Brawl) | Ближний бой (драка) |
+| `i.skill.fighting-chainsaw` | Fighting (Chainsaw) | Ближний бой (цепная пила) |
+| `i.skill.fighting-flail` | Fighting (Flail) | Ближний бой (цеп) |
+| `i.skill.fighting-garrote` | Fighting (Garrote) | Ближний бой (гаррота) |
+| `i.skill.fighting-spear` | Fighting (Spear) | Ближний бой (копьё) |
+| `i.skill.fighting-sword` | Fighting (Sword) | Ближний бой (меч) |
+| `i.skill.fighting-whip` | Fighting (Whip) | Ближний бой (кнут) |
+| `i.skill.firearms-any` | Firearms (Any) | Стрельба (любая) |
+| `i.skill.firearms-artillery` | Firearms (Artillery) | Стрельба (артиллерия) |
+| `i.skill.firearms-bow` | Firearms (Bow) | Стрельба (лук) |
+| `i.skill.firearms-flamethrower` | Firearms (Flamethrower) | Стрельба (огнемёт) |
+| `i.skill.firearms-handgun` | Firearms (Handgun) | Стрельба (пистолет) |
+| `i.skill.firearms-heavy-weapons` | Firearms (Heavy Weapons) | Стрельба (тяжёлое оружие) |
+| `i.skill.firearms-machine-gun` | Firearms (Machine Gun) | Стрельба (пулемёт) |
+| `i.skill.firearms-rifle-shotgun` | Firearms (Rifle/Shotgun) | Стрельба (винтовка/дробовик) |
+| `i.skill.firearms-submachine-gun` | Firearms (Submachine Gun) | Стрельба (пистолет-пулемёт) |
 | `i.skill.first-aid` | First Aid | Первая помощь |
 | `i.skill.gambling` | Gambling | Азартные игры |
 | `i.skill.history` | History | История |
 | `i.skill.hypnosis` | Hypnosis | Гипноз |
 | `i.skill.intimidate` | Intimidate | Запугивание |
 | `i.skill.jump` | Jump | Прыжки |
-| `i.skill.language-any` | Language (Any) | Язык (Любой) |
-| `i.skill.language-own` | Language (Own) | Язык (Родной) |
-| `i.skill.language-czech` | Language (Czech) | Язык (Чешский) |
-| `i.skill.language-dutch` | Language (Dutch) | Язык (Нидерландский) |
-| `i.skill.language-english` | Language (English) | Язык (Английский) |
-| `i.skill.language-german` | Language (German) | Язык (Немецкий) |
-| `i.skill.language-polish` | Language (Polish) | Язык (Польский) |
-| `i.skill.language-russian` | Language (Russian) | Язык (Русский) |
-| `i.skill.language-swahili` | Language (Swahili) | Язык (Суахили) |
-| `i.skill.language-yoruba` | Language (Yoruba) | Язык (Йоруба) |
-| `i.skill.language-zulu` | Language (Zulu) | Язык (Зулу) |
+| `i.skill.language-any` | Language (Any) | Язык (иностранный) |
+| `i.skill.language-czech` | Language (Czech) | Язык (чешский) |
+| `i.skill.language-dutch` | Language (Dutch) | Язык (голландский) |
+| `i.skill.language-english` | Language (English) | Язык (английский) |
+| `i.skill.language-german` | Language (German) | Язык (немецкий) |
+| `i.skill.language-own` | Language (Own) | Язык (родной) |
+| `i.skill.language-polish` | Language (Polish) | Язык (польский) |
+| `i.skill.language-russian` | Language (Russian) | Язык (русский) |
+| `i.skill.language-swahili` | Language (Swahili) | Язык (суахили) |
+| `i.skill.language-yoruba` | Language (Yoruba) | Язык (йоруба) |
+| `i.skill.language-zulu` | Language (Zulu) | Язык (зулу) |
 | `i.skill.law` | Law | Юриспруденция |
-| `i.skill.library-use` | Library Use | Работа с библиотекой |
+| `i.skill.library-use` | Library Use | Работа в библиотеке |
 | `i.skill.listen` | Listen | Слух |
-| `i.skill.locksmith` | Locksmith | Взлом замков |
-| `i.skill.lore-any` | Lore (Any) | Знание (Любое) |
-| `i.skill.mechanical-repair` | Mechanical Repair | Ремонт механики |
+| `i.skill.locksmith` | Locksmith | Взлом |
+| `i.skill.lore-any` | Lore (Any) | Знание (любое) |
+| `i.skill.mechanical-repair` | Mechanical Repair | Механика |
 | `i.skill.medicine` | Medicine | Медицина |
-| `i.skill.natural-world` | Natural World | Природа |
+| `i.skill.natural-world` | Natural World | Естествознание |
 | `i.skill.navigate` | Navigate | Ориентирование |
 | `i.skill.occult` | Occult | Оккультизм |
-| `i.skill.operate-heavy-machinery` | Operate Heavy Machinery | Управление тяжёлой техникой |
+| `i.skill.operate-heavy-machinery` | Operate Heavy Machinery | Управление тяжёлыми машинами |
 | `i.skill.persuade` | Persuade | Убеждение |
-| `i.skill.pilot-any` | Pilot (Any) | Пилотирование (Любое) |
+| `i.skill.pilot-any` | Pilot (Any) | Пилотирование (любое) |
 | `i.skill.psychoanalysis` | Psychoanalysis | Психоанализ |
 | `i.skill.psychology` | Psychology | Психология |
 | `i.skill.read-lips` | Read Lips | Чтение по губам |
 | `i.skill.ride` | Ride | Верховая езда |
 | `i.skill.rope-use` | Rope Use | Работа с верёвкой |
-| `i.skill.science-any` | Science (Any) | Наука (Любая) |
-| `i.skill.science-astronomy` | Science (Astronomy) | Наука (Астрономия) |
-| `i.skill.science-biology` | Science (Biology) | Наука (Биология) |
-| `i.skill.science-botany` | Science (Botany) | Наука (Ботаника) |
-| `i.skill.science-chemistry` | Science (Chemistry) | Наука (Химия) |
-| `i.skill.science-cryptography` | Science (Cryptography) | Наука (Криптография) |
-| `i.skill.science-engineering` | Science (Engineering) | Наука (Инженерное дело) |
-| `i.skill.science-forensics` | Science (Forensics) | Наука (Криминалистика) |
-| `i.skill.science-geology` | Science (Geology) | Наука (Геология) |
-| `i.skill.science-mathematics` | Science (Mathematics) | Наука (Математика) |
-| `i.skill.science-meteorology` | Science (Meteorology) | Наука (Метеорология) |
-| `i.skill.science-pharmacy` | Science (Pharmacy) | Наука (Фармацевтика) |
-| `i.skill.science-physics` | Science (Physics) | Наука (Физика) |
-| `i.skill.science-zoology` | Science (Zoology) | Наука (Зоология) |
+| `i.skill.science-any` | Science (Any) | Наука (любая) |
+| `i.skill.science-astronomy` | Science (Astronomy) | Наука (астрономия) |
+| `i.skill.science-biology` | Science (Biology) | Наука (биология) |
+| `i.skill.science-botany` | Science (Botany) | Наука (ботаника) |
+| `i.skill.science-chemistry` | Science (Chemistry) | Наука (химия) |
+| `i.skill.science-cryptography` | Science (Cryptography) | Наука (криптография) |
+| `i.skill.science-engineering` | Science (Engineering) | Наука (инженерия) |
+| `i.skill.science-forensics` | Science (Forensics) | Наука (криминалистика) |
+| `i.skill.science-geology` | Science (Geology) | Наука (геология) |
+| `i.skill.science-mathematics` | Science (Mathematics) | Наука (математика) |
+| `i.skill.science-meteorology` | Science (Meteorology) | Наука (метеорология) |
+| `i.skill.science-pharmacy` | Science (Pharmacy) | Наука (фармакология) |
+| `i.skill.science-physics` | Science (Physics) | Наука (физика) |
+| `i.skill.science-zoology` | Science (Zoology) | Наука (зоология) |
 | `i.skill.sleight-of-hand` | Sleight of Hand | Ловкость рук |
-| `i.skill.spot-hidden` | Spot Hidden | Внимательность |
+| `i.skill.spot-hidden` | Spot Hidden | Внимание |
 | `i.skill.stealth` | Stealth | Скрытность |
-| `i.skill.survival-any` | Survival (Any) | Выживание (Любое) |
+| `i.skill.survival-any` | Survival (Any) | Выживание (любое) |
 | `i.skill.swim` | Swim | Плавание |
-| `i.skill.track` | Track | Выслеживание |
+| `i.skill.throw` | Throw | Метание |
+| `i.skill.track` | Track | Чтение следов |
 | `i.skill.trap` | Trap | Ловушки |
 
 ## Описания навыков
@@ -199,6 +213,9 @@
 
 ## Оружие (47)
 
+Названия клинков, револьверов и пистолетов приведены к формулировкам официальных
+материалов («большой нож», «револьвер 32-го калибра», «автоматический пистолет 45-го калибра»).
+
 | Английский | Русский |
 | --- | --- |
 | Bow | Лук |
@@ -211,27 +228,27 @@
 | Crossbow | Арбалет |
 | Garrote | Гаррота |
 | Hatchet/Sickle | Топорик/Серп |
-| Knife, Large | Нож, большой |
-| Knife, Medium | Нож, средний |
-| Knife, Small | Нож, малый |
+| Knife, Large | Большой нож |
+| Knife, Medium | Средний нож |
+| Knife, Small | Карманный нож |
 | Nunchaku | Нунчаку |
 | Rock, Thrown | Камень (метательный) |
 | Shuriken | Сюрикэн |
 | Spear | Копьё |
 | Spear, Thrown | Копьё (метательное) |
-| .22 Short Automatic | Самозарядный пистолет .22 Short |
+| .22 Short Automatic | Автоматический пистолет 22-го калибра (Short) |
 | .25 Derringer (1B) | Дерринджер .25 (1 ствол) |
-| .32 or 7.65mm Revolver | Револьвер .32 / 7,65 мм |
-| .32 or 7.65mm Automatic | Самозарядный пистолет .32 / 7,65 мм |
+| .32 or 7.65mm Revolver | Револьвер 32-го калибра / 7,65 мм |
+| .32 or 7.65mm Automatic | Автоматический пистолет 32-го калибра / 7,65 мм |
 | Model P08 Luger | Люгер P08 |
-| .45 Revolver | Револьвер .45 |
-| .45 Automatic | Самозарядный пистолет .45 |
-| .22 Bolt-Action Rifle | Винтовка .22 со скользящим затвором |
+| .45 Revolver | Револьвер 45-го калибра |
+| .45 Automatic | Автоматический пистолет 45-го калибра |
+| .22 Bolt-Action Rifle | Винтовка 22-го калибра со скользящим затвором |
 | .30 Lever-Action Carbine | Карабин .30 со скобой Генри |
-| .45 Martini-Henry Rifle | Винтовка Мартини-Генри .45 |
+| .45 Martini-Henry Rifle | Винтовка Мартини-Генри 45-го калибра |
 | Col. Moran's Air Rifle | Духовое ружьё полковника Морана |
 | .303 Lee-Enfield | Ли-Энфилд .303 |
-| .30-06 Bolt-Action Rifle | Винтовка .30-06 со скользящим затвором |
+| .30-06 Bolt-Action Rifle | Винтовка калибра .30–06 со скользящим затвором |
 | Elephant Gun (2B) | Слоновое ружьё (2 ствола) |
 | 20-gauge Shotgun (2B) | Дробовик 20-го калибра (2 ствола) |
 | 16-gauge Shotgun (2B) | Дробовик 16-го калибра (2 ствола) |
@@ -248,15 +265,6 @@
 | Punch | Удар кулаком |
 | Death ray (prototype) | Луч смерти (прототип) |
 | Experimental weapon | Экспериментальное оружие |
-
-| Папка | Перевод |
-| --- | --- |
-| Hand-to-Hand Weapons | Оружие ближнего боя |
-| Handguns | Пистолеты и револьверы |
-| Rifles | Винтовки |
-| Shotguns | Дробовики |
-| Submachine Guns | Пистолеты-пулемёты |
-| Machine Guns | Пулемёты |
 
 ## Таблицы
 
@@ -340,3 +348,17 @@
   `malfunction`, `eras`, состав `system.items`/`skills`/`groups` — скопированы
   без изменений.
 - Контент из платных книг: в системе его нет.
+
+## Источники сверки
+
+Официальные материалы Мир Хобби / Hobby World:
+[лист сыщика 1920-х](https://hobbygames.ru/download/rules/call_of_cthulhu_character_sheet_00.pdf),
+[лист «Стартового набора»](https://hobbygames.ru/download/rules/Zov_Ktulhu_gotovie_pers.pdf),
+[готовые сыщики «Кошмары цифровой эпохи»](https://hobbygames.ru/download/rules/zov-ktulhu-characters.pdf),
+[лист современного сыщика](https://hobbygames.ru/download/rules/Keepers_sovremennij_Character_Sheets.pdf.pdf),
+[готовые сыщики «Двери во тьму»](https://hobbygames.ru/download/rules/Call_of_Chtulhu/Dveri_vo_Tmu_Personazhi.pdf),
+[материалы игроков «Маски Ньярлатхотепа»](https://hobbygames.ru/download/rules/zk-maski-njarlathotepa-materiali-igrokov.pdf),
+[глоссарий имён и существ](https://hobbygames.ru/download/rules/CoC_Keeper_Bestiary.pdf).
+
+Неофициальный источник (только там, где издания молчат):
+[«Как создать персонажа», перевод Hort](https://callofcthulhu.ru/files/creating_investigators_for_call_of_cthulhu_rpg.pdf).

@@ -248,7 +248,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Нож, большой
+name: Большой нож
 type: weapon
 img: icons/weapons/swords/sword-machete-white.webp
 folder: RuWeapFolder0001
@@ -269,7 +269,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Нож, средний
+name: Средний нож
 type: weapon
 img: icons/tools/cooking/knife-chef-steel-brown.webp
 folder: RuWeapFolder0001
@@ -290,7 +290,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Нож, малый
+name: Карманный нож
 type: weapon
 img: icons/weapons/daggers/knife-green.webp
 folder: RuWeapFolder0001
@@ -421,7 +421,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Самозарядный пистолет .22 Short
+name: Автоматический пистолет 22-го калибра (Short)
 type: weapon
 img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
 folder: RuWeapFolder0002
@@ -473,7 +473,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Револьвер .32 / 7,65 мм
+name: Револьвер 32-го калибра / 7,65 мм
 type: weapon
 img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
 folder: RuWeapFolder0002
@@ -499,7 +499,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Самозарядный пистолет .32 / 7,65 мм
+name: Автоматический пистолет 32-го калибра / 7,65 мм
 type: weapon
 img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
 folder: RuWeapFolder0002
@@ -551,7 +551,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Револьвер .45
+name: Револьвер 45-го калибра
 type: weapon
 img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
 folder: RuWeapFolder0002
@@ -577,7 +577,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Самозарядный пистолет .45
+name: Автоматический пистолет 45-го калибра
 type: weapon
 img: icons/weapons/guns/gun-pistol-flintlock-metal.webp
 folder: RuWeapFolder0002
@@ -603,7 +603,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Винтовка .22 со скользящим затвором
+name: Винтовка 22-го калибра со скользящим затвором
 type: weapon
 img: icons/weapons/guns/gun-wood.webp
 folder: RuWeapFolder0003
@@ -655,7 +655,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Винтовка Мартини-Генри .45
+name: Винтовка Мартини-Генри 45-го калибра
 type: weapon
 img: icons/weapons/guns/gun-wood.webp
 folder: RuWeapFolder0003
@@ -733,7 +733,7 @@ flags:
       lang: ru
       priority: 0
 ---
-name: Винтовка .30-06 со скользящим затвором
+name: Винтовка калибра .30–06 со скользящим затвором
 type: weapon
 img: icons/weapons/guns/gun-wood.webp
 folder: RuWeapFolder0003

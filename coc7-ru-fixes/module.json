@@ -2,7 +2,7 @@
   "id": "coc7-ru-fixes",
   "title": "CoC7 Russian Localization Fixes",
   "description": "Полная редакторская русификация интерфейса мастера создания сыщика и листа Investigator для системы Call of Cthulhu 7th Edition. Модуль не изменяет файлы системы, а накладывает исправленные строки поверх штатного словаря.",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "authors": [
     {
       "name": "reafer184"
