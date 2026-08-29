@@ -150,5 +150,7 @@
   ],
   "url": "https://github.com/reafer184/CoC7e_Ru",
   "manifest": "https://raw.githubusercontent.com/reafer184/CoC7e_Ru/ai/ru-investigator-overhaul/coc7-ru-content/module.json",
-  "download": "https://github.com/reafer184/CoC7e_Ru/archive/refs/heads/ai/ru-investigator-overhaul.zip"
+  "download": "https://github.com/reafer184/CoC7e_Ru/raw/ai/ru-investigator-overhaul/dist/coc7-ru-content.zip",
+  "readme": "https://raw.githubusercontent.com/reafer184/CoC7e_Ru/ai/ru-investigator-overhaul/coc7-ru-content/README.md",
+  "bugs": "https://github.com/reafer184/CoC7e_Ru/issues"
 }

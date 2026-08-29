@@ -29,5 +29,10 @@
       "name": "Русский — исправления CoC7",
       "path": "lang/ru.json"
     }
-  ]
+  ],
+  "url": "https://github.com/reafer184/CoC7e_Ru",
+  "manifest": "https://raw.githubusercontent.com/reafer184/CoC7e_Ru/ai/ru-investigator-overhaul/coc7-ru-fixes/module.json",
+  "download": "https://github.com/reafer184/CoC7e_Ru/raw/ai/ru-investigator-overhaul/dist/coc7-ru-fixes.zip",
+  "readme": "https://raw.githubusercontent.com/reafer184/CoC7e_Ru/ai/ru-investigator-overhaul/coc7-ru-fixes/README.md",
+  "bugs": "https://github.com/reafer184/CoC7e_Ru/issues"
 }
