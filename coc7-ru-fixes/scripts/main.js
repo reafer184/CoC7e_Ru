@@ -1,65 +1,83 @@
-const MODULE_ID = "coc7-ru-fixes";
+/**
+ * coc7-ru-fixes
+ *
+ * Модуль не изменяет файлы системы CoC7. Он накладывает исправленные русские
+ * строки поверх штатного словаря.
+ *
+ * Слой 1: lang/ru.json регистрируется как языковой файл модуля — Foundry
+ *         сливает его со словарём системы при загрузке локали.
+ * Слой 2: этот скрипт повторно применяет тот же файл на хуке "ready" с
+ *         overwrite: true. Это страхует порядок слияния переводов: если
+ *         системный или сторонний ru.json загрузился позже, наши формулировки
+ *         всё равно окажутся сверху.
+ *
+ * Единственный источник строк — lang/ru.json, словарь здесь не дублируется.
+ */
 
-const TRANSLATION_FIXES = {
-  CoC7: {
-    AddArmor: "Добавить броню",
-    ClearExperiencePackageName: "Сбросить пакет опыта",
-    DeleteBookProgress: "Удалить прогресс изучения книги",
-    ExperiencePackageSkill: "Навык из пакета опыта",
-    SkillExperiencePackage: "Пакет опыта",
-    ModifiedByActiveEffect: "Значение изменено активным эффектом и недоступно для прямого редактирования",
+const MODULE_ID = 'coc7-ru-fixes'
+const OVERRIDES_PATH = `modules/${MODULE_ID}/lang/ru.json`
 
-    ActorDataLinked: "Данные персонажа связаны",
-    ActorDataNotLinked: "Данные персонажа не связаны",
-    ActorIsSyntheticActor: "Это синтетический персонаж",
-    ActorIsTokenHint: "Персонаж используется как токен",
-
-    AddSanityLossEncounter: "Добавить событие потери рассудка",
-    DeleteSanityLossEncounter: "Удалить событие потери рассудка",
-    AddSanityLossImmunity: "Добавить невосприимчивость к потере рассудка",
-    DeleteSanityLossImmunity: "Удалить невосприимчивость к потере рассудка",
-    SanityLossImmunity: "Невосприимчивость к потере рассудка",
-
-    BackgroundFlagsMythosExperienced: "Получено 5% навыка «Мифы Ктулху» за безумие",
-    BackgroundFlagsMythosHardened: "Закалён Мифами Ктулху",
-
-    CriticalWounds: "Тяжёлая рана",
-    Dead: "Мёртв",
-    Dying: "При смерти",
-    Prone: "Сбит с ног",
-    Unconscious: "Без сознания",
-
-    AutoCreditValues: "Включить или выключить автоматический расчёт",
-    DailySanIconOver: "Сбросить",
-    NoSkill: "Навык не назначен",
-
-    Reload: "ЛКМ/ПКМ: добавить или убрать 1 патрон<br>Shift + ЛКМ/ПКМ: перезарядить или разрядить оружие",
-
-    SkillBase: "Базовое значение",
-    SkillDetail: "Сведения о навыке",
-    SkillExperience: "Опыт",
-    SkillOccupation: "Профессия",
-    SkillPersonal: "Личные интересы",
-    Value: "Итог",
-
-    TradeItem: "Передать или убрать предмет",
-    OccupationSkill: "Профессиональный навык",
-    ArchetypeSkill: "Навык архетипа",
-
-    ToolTipAutoToggle:
-      "<label>Переключатель автоматического расчёта</label><ul><li><strong>ЛКМ</strong>: переключить между автоматическим расчётом и ручным вводом</li></ul>",
-    ToolTipDB:
-      "<label>Бонус к урону</label><ul><li><strong>ЛКМ</strong>: немедленно бросить кубики</li></ul>"
+/**
+ * Загружает словарь исправлений.
+ * @returns {Promise<object|null>}
+ */
+async function loadOverrides () {
+  try {
+    if (typeof foundry?.utils?.fetchJsonWithTimeout === 'function') {
+      return await foundry.utils.fetchJsonWithTimeout(OVERRIDES_PATH)
+    }
+    const response = await fetch(OVERRIDES_PATH)
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`)
+    }
+    return await response.json()
+  } catch (error) {
+    console.error(
+      `${MODULE_ID} | Не удалось загрузить ${OVERRIDES_PATH}:`,
+      error
+    )
+    return null
   }
-};
+}
 
-Hooks.once("ready", () => {
-  if (game.i18n.lang !== "ru") return;
+/**
+ * Считает количество листовых строк в словаре.
+ * @param {object} node
+ * @returns {number}
+ */
+function countStrings (node) {
+  let total = 0
+  for (const value of Object.values(node)) {
+    if (value !== null && typeof value === 'object') {
+      total += countStrings(value)
+    } else {
+      total += 1
+    }
+  }
+  return total
+}
 
-  foundry.utils.mergeObject(game.i18n.translations, TRANSLATION_FIXES, {
+Hooks.once('ready', async () => {
+  const lang = game.i18n?.lang ?? ''
+  if (!lang.toLowerCase().startsWith('ru')) {
+    return
+  }
+
+  const overrides = await loadOverrides()
+  if (overrides === null) {
+    return
+  }
+
+  const merge = foundry?.utils?.mergeObject ?? mergeObject
+  merge(game.i18n.translations, overrides, {
     inplace: true,
     overwrite: true
-  });
+  })
 
-  console.info(`${MODULE_ID} | Исправления русской локализации загружены.`);
-});
+  console.info(
+    `${MODULE_ID} | Исправления русской локализации применены: ` +
+      `${countStrings(overrides)} строк.`
+  )
+
+  Hooks.callAll(`${MODULE_ID}.applied`, overrides)
+})
