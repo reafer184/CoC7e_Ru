@@ -3,8 +3,23 @@
   "title": "CoC7 Russian Localization Fixes",
   "description": "Исправления русской локализации листа Investigator и мастера создания персонажа для Call of Cthulhu 7e.",
   "version": "0.1.0",
-  "authors": [{"name": "reafer184"}],
-  "compatibility": {"minimum": "12", "verified": "13"},
-  "esmodules": ["scripts/main.js"],
-  "languages": [{"lang": "ru", "name": "Русский — исправления CoC7", "path": "lang/ru.json"}]
+  "authors": [
+    {
+      "name": "reafer184"
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13"
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский — исправления CoC7",
+      "path": "lang/ru.json"
+    }
+  ]
 }
